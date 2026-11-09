@@ -18,9 +18,16 @@ currently installed or available on `PATH`.
 Use the official CEdev release for macOS (Apple Silicon or Intel) from the
 [CE C/C++ Toolchain getting-started guide](https://ce-programming.github.io/toolchain/static/getting-started.html).
 Install it in a path without spaces, then add its `bin` directory to `PATH`.
-Open a new shell and verify:
+For the current installation path, add this line to `~/.zshrc`:
 
 ```sh
+export PATH="/Users/karsten/CEdev/bin:$PATH"
+```
+
+Reload the shell configuration and verify:
+
+```sh
+source ~/.zshrc
 command -v cedev-config
 command -v make
 ```
